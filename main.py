@@ -36,7 +36,7 @@ class Videogen:
     #     return create_video(self.video_data, self.folder_path, theme_name=self.theme, video_name=self.topic_name, overall_fps=15)
     
     # def save_all_data(self):
-    #     save_as_text_file(self.slide_content 
+    #     save_as_text_file(self.slide_content )
 
 
     def run(self):
