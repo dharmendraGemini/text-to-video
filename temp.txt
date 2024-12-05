@@ -1,0 +1,41 @@
+Extract Data from the Request
+
+
+sanity testing
+
+anLYSE Prompt
+
+fetch data
+ - text
+ - image
+ - audio
+
+convert into vid template
+
+gen video- movie py
+
+
+Retry fetching and analyzing data up to max_retries times.
+Save User Input
+
+Save the user inputs to a JSON file for later reference.
+Create Content Directory
+
+Create a directory for storing video-related assets (images, audio, etc.).
+Generate Images and Audio
+
+Iterate over video_data to:
+Generate audio narration using either Google TTS or Amazon Polly.
+Generate images using Bing or Stable Diffusion, with fallback options.
+Save Video Metadata
+
+Save the generated metadata (e.g., image paths, audio paths) to a JSON file.
+Generate Video
+
+Use the metadata and assets to create a video file.
+Upload Assets to S3 (if not in a development environment)
+
+Zip the content folder and upload both the video and zipped folder to an S3 bucket.
+Return Video URL
+
+Return the URL of the uploaded video or the locally created video file.
